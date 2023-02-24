@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Login Credentials" class=" center slds-var-m-around_small">
+     
+       
+        <div class=" slds-box  slds-var-m-around_medium">
+         
+            <lightning-input label=" UserId"  type="Text"  value={userName} onchange={userHandler}></lightning-input>
+            <lightning-input label=" Password"  type="password" value={password} onchange={passHandler}></lightning-input>
+            <br/>
+            <br/>
+            <lightning-button variant="Brand" label="Submit" onclick={submitHandler} class="slds-var-p-around_xx-large"></lightning-button>
+            <lightning-button variant="destructive" label="reset" onclick={resetHandler} class="slds-var-p-around_xx-large"></lightning-button>
+            <lightning-button variant="success" label="Register" onclick={registerHandler} class="slds-var-p-around_xx-large"></lightning-button>
+        </div>
+        <div>
+            
+        </div>
+ 
+
+    </lightning-card>
+</template>
